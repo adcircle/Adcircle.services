@@ -8,11 +8,19 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 body{background:#fff;color:#111}header{ display:flex;justify-content:space-between;align-items:center; padding:20px 40px;background:#fff;position:sticky;top:0; box-shadow:0 2px 10px rgba(0,0,0,0.05) }
 
+.logo img{height:40px;cursor:pointer}
+
+nav{display:flex;gap:25px} nav a{ color:#111;text-decoration:none;font-weight:700;position:relative; transition:0.3s; } nav a::after{ content:'';position:absolute;bottom:-5px;left:0;width:0;height:2px;background:red;transition:0.3s } nav a:hover{ color:red; } nav a:hover::after{width:100%}
+
 /* ONLY LOGO */ .logo img{height:40px;cursor:pointer}
 
 .hero{ padding:80px 40px;text-align:center } .hero h1{ font-size:50px;font-weight:800; animation:fadeUp 1s ease } .hero span:first-child{color:red} .hero span:last-child{color:black}
 
 @keyframes fadeUp{ from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+
+/* TITLE ANIMATION */ .animated-title{ font-size:50px; font-weight:800; animation:slideGlow 2s infinite alternate; }
+
+@keyframes slideGlow{ 0%{letter-spacing:2px;color:#111} 100%{letter-spacing:6px;color:red} } to{opacity:1;transform:translateY(0)} }
 
 .services{ padding:60px 40px; display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:30px; }
 
@@ -39,9 +47,13 @@ body{background:#fff;color:#111}header{ display:flex;justify-content:space-betwe
 <body><header>
 <div class="logo" onclick="location.href='https://adcircle.github.io/Adcircle/#'">
   <img src="logo.png">
-</div>
+</div><nav>
+<a href="https://adcircle.github.io/Adcircle/#">Home</a>
+<a href="https://adcircle.github.io/Adcircle/#">Services</a>
+<a href="https://adcircle.github.io/Adcircle/#">Contact</a>
+</nav>
 </header><section class="hero">
-<h1><span>Ad</span><span>Circle</span></h1>
+<h1 class="animated-title">Our Services</h1>
 </section><section class="services"><div class="card">
 <h2>Meta Ads</h2>
 <p>High-converting Facebook & Instagram ads with smart targeting to bring real customers and sales.</p>
