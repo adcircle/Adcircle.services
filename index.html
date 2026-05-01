@@ -8,9 +8,9 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 body{background:#fff;color:#111}header{ display:flex;justify-content:space-between;align-items:center; padding:20px 40px;background:#fff;position:sticky;top:0; box-shadow:0 2px 10px rgba(0,0,0,0.05) }
 
-.logo img{height:40px}
+/* LOGO TEXT STYLE */ .logo{ font-size:26px;font-weight:800;cursor:pointer } .logo span:first-child{color:red} .logo span:last-child{color:black}
 
-nav{display:flex;gap:25px} nav a{ color:#111;text-decoration:none;font-weight:700;position:relative } nav a::after{ content:'';position:absolute;bottom:-5px;left:0;width:0;height:2px;background:#000;transition:0.3s } nav a:hover::after{width:100%}
+nav{display:flex;gap:25px} nav a{ color:#111;text-decoration:none;font-weight:700;position:relative } nav a::after{ content:'';position:absolute;bottom:-5px;left:0;width:0;height:2px;background:red;transition:0.3s } nav a:hover::after{width:100%}
 
 .hero{ padding:80px 40px;text-align:center } .hero h1{ font-size:45px;font-weight:800; animation:fadeUp 1s ease }
 
@@ -18,23 +18,23 @@ nav{display:flex;gap:25px} nav a{ color:#111;text-decoration:none;font-weight:70
 
 .services{ padding:60px 40px; display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:30px; }
 
-.card{ background:#000; color:#fff; padding:30px; border-radius:20px; transition:0.3s; animation:float 4s ease-in-out infinite; }
+/* CARDS */ .card{ background:#fff; color:#111; padding:30px; border-radius:20px; border:2px solid red; transition:0.3s; animation:float 3s ease-in-out infinite; }
 
-.card:hover{ transform:translateY(-10px) scale(1.02); }
+.card:hover{ transform:translateY(-10px) scale(1.03); background:red; color:#fff; }
 
-@keyframes float{ 0%{transform:translateY(0)} 50%{transform:translateY(-10px)} 100%{transform:translateY(0)} }
+@keyframes float{ 0%{transform:translateY(0)} 50%{transform:translateY(-8px)} 100%{transform:translateY(0)} }
 
 .card h2{ margin-bottom:15px; font-size:24px }
 
-.card p{ color:#ddd;line-height:1.6 }
+.card p{ line-height:1.6 }
 
-.section-text{ padding:60px 40px; max-width:800px;margin:auto;text-align:center; color:#444;line-height:1.6 }
+.section-text{ padding:60px 40px; max-width:800px;margin:auto;text-align:center; color:#444;line-height:1.6; animation:fadeUp 1.5s ease }
 
 </style>
 </head>
 <body><header>
-<div class="logo">
-<img src="logo.png">
+<div class="logo" onclick="location.href='https://adcircle.github.io/Adcircle/#'">
+  <span>Ad</span><span>Circle</span>
 </div>
 <nav>
 <a href="https://adcircle.github.io/Adcircle/#">Home</a>
@@ -58,7 +58,8 @@ nav{display:flex;gap:25px} nav a{ color:#111;text-decoration:none;font-weight:70
 </div></section><section class="section-text">
 <p>
 We focus on performance and real results. Every service is designed to help your business grow faster with proven strategies.
-</p><p>
+</p>
+<p>
 From local businesses to growing brands, Ad Circle provides powerful digital solutions that actually work.
 </p>
 </section></body>
