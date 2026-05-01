@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services - Ad Circle</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{
+  color:#fff;
+  overflow-x:hidden;
+  background:linear-gradient(270deg,#ff0000,#ff4d4d,#990000);
+  background-size:600% 600%;
+  animation:gradientMove 10s ease infinite;
+}@keyframes gradientMove{ 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+
+header{ display:flex;justify-content:space-between;align-items:center; padding:20px 40px;position:sticky;top:0; } .logo img{height:40px} nav{display:flex;gap:25px} nav a{color:#fff;text-decoration:none;font-weight:700}
+
+.hero{ padding:100px 40px;text-align:center; } .hero h1{ font-size:50px;font-weight:800; animation:fadeUp 1s ease; }
+
+@keyframes fadeUp{ from{opacity:0;transform:translateY(40px)} to{opacity:1;transform:translateY(0)} }
+
+.services{ padding:60px 40px; display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:30px; }
+
+.card{ background:rgba(255,255,255,0.1); backdrop-filter:blur(10px); border-radius:20px; padding:30px; transition:0.4s; animation:float 4s ease-in-out infinite; }
+
+.card:hover{ transform:scale(1.05) rotate(1deg); background:rgba(255,255,255,0.2); }
+
+@keyframes float{ 0%{transform:translateY(0)} 50%{transform:translateY(-15px)} 100%{transform:translateY(0)} }
+
+.card h2{ margin-bottom:15px; font-size:26px; }
+
+.card p{ color:#eee; line-height:1.6; }
+
+.extra{ padding:100px 40px; text-align:center; }
+
+.extra h2{ font-size:40px; margin-bottom:20px; }
+
+.extra p{ max-width:700px;margin:auto;color:#ddd; }
+
+.glow-btn{ margin-top:30px; padding:15px 40px; background:#fff; color:#ff0000; border-radius:40px; text-decoration:none; font-weight:700; box-shadow:0 0 20px rgba(255,255,255,0.8); animation:glow 2s infinite alternate; }
+
+@keyframes glow{ from{box-shadow:0 0 10px #fff} to{box-shadow:0 0 30px #fff} }
+
+</style>
+</head>
+<body><header>
+<div class="logo"><img src="logo.png"></div>
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+</header><section class="hero">
+<h1>Our Powerful Services</h1>
+</section><section class="services"><div class="card">
+<h2>Meta Ads</h2>
+<p>High-converting Facebook & Instagram ads with advanced targeting, creatives and scaling strategies to maximize ROI.</p>
+</div><div class="card">
+<h2>Landing Pages</h2>
+<p>Fast, responsive and conversion-focused landing pages designed to turn visitors into leads instantly.</p>
+</div><div class="card">
+<h2>Website Design</h2>
+<p>Modern websites with premium UI/UX that build trust and help your brand stand out in the market.</p>
+</div><div class="card">
+<h2>Lead Generation</h2>
+<p>Data-driven campaigns that generate high-quality leads consistently and scale your business growth.</p>
+</div></section><section class="extra">
+<h2>Why Choose Ad Circle?</h2>
+<p>We don't just run ads — we build growth systems. From strategy to execution, everything is focused on results, scaling and long-term success.</p>
+<a href="#" class="glow-btn">Start Now</a>
+</section></body>
+</html>
