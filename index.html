@@ -2,23 +2,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<title>Services - Ad Circle</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 body{background:#fff;color:#111}header{ display:flex;justify-content:space-between;align-items:center; padding:20px 40px;background:#fff;position:sticky;top:0; box-shadow:0 2px 10px rgba(0,0,0,0.05) }
 
-/* LOGO IMAGE */ .logo{ display:flex; align-items:center; gap:10px; cursor:pointer; } .logo img{height:40px} .logo-text{ font-size:20px;font-weight:800; } .logo-text span:first-child{color:red} .logo-text span:last-child{color:black}
+/* ONLY LOGO */ .logo img{height:40px;cursor:pointer}
 
-nav{display:flex;gap:25px} nav a{ color:#111;text-decoration:none;font-weight:700;position:relative } nav a::after{ content:'';position:absolute;bottom:-5px;left:0;width:0;height:2px;background:red;transition:0.3s } nav a:hover::after{width:100%}
-
-.hero{ padding:80px 40px;text-align:center } .hero h1{ font-size:45px;font-weight:800; animation:fadeUp 1s ease }
+.hero{ padding:80px 40px;text-align:center } .hero h1{ font-size:50px;font-weight:800; animation:fadeUp 1s ease } .hero span:first-child{color:red} .hero span:last-child{color:black}
 
 @keyframes fadeUp{ from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
 
 .services{ padding:60px 40px; display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:30px; }
 
-/* CARDS FIXED */ .card{ background:red; color:#fff; padding:30px; border-radius:20px; border:2px solid red; transition:0.3s; animation:float 3s ease-in-out infinite; }
+.card{ background:red; color:#fff; padding:30px; border-radius:20px; border:2px solid red; transition:0.3s; animation:float 3s ease-in-out infinite; }
 
 .card:hover{ transform:translateY(-10px) scale(1.03); background:#fff; color:#111; }
 
@@ -30,20 +28,20 @@ nav{display:flex;gap:25px} nav a{ color:#111;text-decoration:none;font-weight:70
 
 .section-text{ padding:60px 40px; max-width:800px;margin:auto;text-align:center; color:#444;line-height:1.6; animation:fadeUp 1.5s ease }
 
+/* WHATSAPP BUTTON */ .whatsapp{ display:flex;justify-content:center; margin:80px 0; }
+
+.whatsapp a{ background:#25D366; color:#fff; padding:15px 35px; border-radius:40px; text-decoration:none; font-weight:700; animation:pulse 2s infinite; }
+
+@keyframes pulse{ 0%{transform:scale(1)} 50%{transform:scale(1.08)} 100%{transform:scale(1)} }
+
 </style>
 </head>
 <body><header>
 <div class="logo" onclick="location.href='https://adcircle.github.io/Adcircle/#'">
   <img src="logo.png">
-  <div class="logo-text"><span>Ad</span><span>Circle</span></div>
 </div>
-<nav>
-<a href="https://adcircle.github.io/Adcircle/#">Home</a>
-<a href="https://adcircle.github.io/Adcircle/#">Services</a>
-<a href="https://adcircle.github.io/Adcircle/#">Contact</a>
-</nav>
 </header><section class="hero">
-<h1>Our Services</h1>
+<h1><span>Ad</span><span>Circle</span></h1>
 </section><section class="services"><div class="card">
 <h2>Meta Ads</h2>
 <p>High-converting Facebook & Instagram ads with smart targeting to bring real customers and sales.</p>
@@ -63,5 +61,7 @@ We focus on performance and real results. Every service is designed to help your
 <p>
 From local businesses to growing brands, Ad Circle provides powerful digital solutions that actually work.
 </p>
-</section></body>
+</section><div class="whatsapp">
+<a href="https://wa.me/919517000518">Start Chat</a>
+</div></body>
 </html>
